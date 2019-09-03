@@ -4,9 +4,10 @@
 //Call the code from the Calculate class (aka client or runner code)
 public class DoMath {
 
-	public static void main(String[] args)
-	{
-		Calculate.square(5);
+	public static void main(String[] args) {
+		System.out.println(Calculate.square(5));
+		System.out.println(Calculate.cube(3));
+		
 	}
 	
 }
