@@ -12,7 +12,26 @@ public class Calculate {
 		return answer;
 	}
 	
-	public static int average(double number) {
-		double answer = 
+	public static double average(int number1, int number2) {    //average
+		double answer = (number1 + number2) / 2.0;
+		return answer; 
 	}
+	
+	public static double average (int number1, int number2, int number3) { //average
+		double answer = (number1 + number2 + number3) / 3.0;
+		return answer;
+	}
+	public static double toDegrees (double number) {     //toRadians
+		double answer = (3.14159 / number) * (180 / 3.14159);
+		return answer;
+	}
+				
+	public static double toRadians (double number) {    //toDegrees
+		double answer = (number) * (3.14159 / 180);
+		return answer;
+	}
+	
+	public static int isDivisibleBy ()
+		return
 }
+	
