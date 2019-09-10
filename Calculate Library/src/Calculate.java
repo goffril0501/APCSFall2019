@@ -1,6 +1,9 @@
 //Gaby Offril
 //August 29, 2019
 //Library of math functions
+
+                               //Part1
+
 public class Calculate {
 	public static int square(int number) {          //square
 		int answer = number * number;
@@ -30,6 +33,8 @@ public class Calculate {
 		double answer = (number) * (3.14159 / 180);
 		return answer;
 	}
+	
+	                           //Part 2
 	
 	public static int isDivisibleBy ()
 		return
