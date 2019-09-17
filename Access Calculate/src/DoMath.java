@@ -7,7 +7,7 @@ public class DoMath {
 	public static void main(String[] args) {
 		System.out.println(Calculate.square(5));
 		System.out.println(Calculate.cube(3));
-		System.out.println(Calculate.average(2, 3));
+		System.out.println(Calculate.average(2, 2));
 		System.out.println(Calculate.average(1, 2, 3));
 		System.out.println(Calculate.toRadians(15));
 		System.out.println(Calculate.toDegrees(12));
