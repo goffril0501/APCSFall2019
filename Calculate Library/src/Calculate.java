@@ -3,10 +3,10 @@
 //Library of math functions
 
 
-public class Calculate {    //awesome header. 
+public class Calculate {    //awesome header
 
 	
-	//Part Uno oh yes
+	//Part One oh yes
 	
 	
 	public static int square(int number) {          //square the input
@@ -55,7 +55,7 @@ public class Calculate {    //awesome header.
 		return whole + "_" + numerator + "/" + number2;
 	}
 	
-	public static String foil (int num1, int num2, int num3, int num4, String x) { //convert binomial expressions to quadratic equations
+	public static String foil (int num1, int num2, int num3, int num4, String x) {    //convert binomial expressions to quadratic equations. this one took a while :|
 		int quad1 = num1 * num3;
 		int quad2 = (num2 * num3) + (num1 * num4);
 		int quad3 = num2 * num4;
@@ -88,7 +88,7 @@ public class Calculate {    //awesome header.
 		}
 	}
 	
-	public static double max (double number1, double number2, double number3) {   //same as the above method, but accepts 3 values now. we r accepting of all :)
+	public static double max (double number1, double number2, double number3) {   //same as the above method, but accepts 3 values now. we are accepting of all :)
 		if (number1 > number2 && number1 > number3) {
 			return number1;
 		}else if(number2 > number1 && number2 > number3) {
@@ -98,7 +98,7 @@ public class Calculate {    //awesome header.
 		}
 	}	
 	
-	public static int min (int number1, int number2) {    //returns the smolest value uWu
+	public static int min (int number1, int number2) {    //returns the smallest value
 		if (number1 < number2) {
 			return number1;
 		}else{ 
@@ -107,7 +107,7 @@ public class Calculate {    //awesome header.
 		}
 	}
 	
-	public static double round2 (double number) {    //rounds number to 2 decimal places or whateva
+	public static double round2 (double number) {    //rounds number to 2 decimal places 
 		double step1 = (number * 100) + 0.5;
 		double step2 = (int) step1;
 		return step2/100;
@@ -118,6 +118,9 @@ public class Calculate {    //awesome header.
 
 		//Part 3 Bruvva :*
 
+	
+	
+	
 
 	public static double exponent (double number1, int number2) {   //raises a number to a positive integer power! 
 		double answer = number1;
@@ -139,8 +142,29 @@ public class Calculate {    //awesome header.
 		return answer;
 	}
 	
-	
-	
-	
+	public static boolean isPrime (int number) {     //determines if the int is prime
+		int factor = 2;
+		while (number % factor !=0) {
+			factor++;
+			
+		}
+		if (factor ==number) {
+			return true;
+		}else{	
+			return false;
+		}
+		
+	}
+		
+	public static int gcf (int number1, int number2) {      // finds the greatest common factor of 2 ints
+		int less = min(number1, number2);
+		double great = max(number1, number2);
+		int answer = less;
+		while (great%answer !=0) {
+			answer--;
+			
+		}
+		return answer;	
 	}
 
+}

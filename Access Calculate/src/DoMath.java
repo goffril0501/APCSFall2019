@@ -2,7 +2,7 @@
 //APCS Perid 3
 //August 29, 2019
 //Call the code from the Calculate class (aka client or runner code)
-public class DoMath {
+public class DoMath { //another awesome header.
 
 	public static void main(String[] args) {
 		System.out.println(Calculate.square(5));
@@ -15,5 +15,6 @@ public class DoMath {
 		System.out.println(Calculate.absValue(5));
 		System.out.println(Calculate.toMixedNum(9, 2));
 		System.out.println(Calculate.foil(2, 3, 6, -7, "x"));
+		System.out.println(Calculate.gcf(34, 12));
 	}
 }
